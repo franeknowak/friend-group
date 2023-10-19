@@ -2,37 +2,27 @@
 
 # Your code to go here...
 
-my_group = {
-    'Jill' : {
-        'job': 'biologist',
-        'age': 26,
-        'connections': {
-            'Zalika': 'Friend',
-            'John': 'Partner'
-        }
-    },
-    'Zalika' : {
-        'job': 'artist',
-        'age': 28,
-        'connections': {
-            'Jill': 'Friend'
-        }
-    },
-    'John' : {
-        'job': 'writer',
-        'age': 27,
-        'connections': {
-            'Jill': 'Partner'
-        }
-    },
-    'Nash' : {
-        'job': 'chef',
-        'age': 34,
-        'connections': {
-            'John': 'Cousin',
-            'Zalika': 'Landlord'
-        }
-    },
-}
-
-print(my_group)
+my_group = {'Jill': {
+                'job': 'Biologist',
+                'age': '26',
+                'connections': {
+                    'Zalika': 'friend',
+                    'John': 'partner'}},
+            'Zalika': {
+                'job': 'Artist',
+                'age': '28',
+                'connections': {
+                    'Jill': 'friend',
+                    'Nash': 'landlord'}},
+            'John': {
+                'job': 'Writer',
+                'age': '27',
+                'connections': {
+                    'Jill': 'partner',
+                    'Nash': 'cousin'}},
+            'Nash': {
+                'job': 'chef',
+                'age': '34',
+                'connections': {
+                    'John': 'cousin',
+                    'Zalika': 'landlord'}}}
