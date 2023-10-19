@@ -49,3 +49,29 @@ def add_person(name: str, age: int, job: str, relations: dict):
     # Update the existing members connection list
     for person in relations:
         my_group[person]['connections'][name] = relations[person]
+
+def get_max_age(dic):
+    age_list = []
+    for person in dic:
+        age_list.append(dic[person]['age'])
+    return max(age_list)
+
+def get_avg_num_relations(dic):
+    relation_num_list = []
+    for person in dic:
+        relation_num_list.append(len(dic[person]['connections']))
+    return sum(relation_num_list)/len(relation_num_list)
+
+def get_max_age_with_relation(dic):
+    age_list = []
+    for person in dic:
+        if len(dic[person]['connections']) != 0:
+            age_list.append(dic[person]['age'])
+    return max(age_list)
+
+def get_max_age_with_friend(dic):
+    age_list = []
+    for person in dic:
+        if 'friend' in list(dic[person]['connections'].values()):
+            age_list.append(dic[person]['age'])
+    return max(age_list)
