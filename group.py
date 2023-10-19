@@ -75,3 +75,8 @@ def get_max_age_with_friend(dic):
         if 'friend' in list(dic[person]['connections'].values()):
             age_list.append(dic[person]['age'])
     return max(age_list)
+
+print(f"Max age of a person in the group: {get_max_age(my_group)}")
+print(f"Average number of relations for people in the group: {get_avg_num_relations(my_group)}")
+print(f"Max age in group of a person with a relation: {get_max_age_with_relation(my_group)}")
+print(f"Max age in group of a person with a friend: {get_max_age_with_friend(my_group)}")
