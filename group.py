@@ -4,25 +4,25 @@
 
 my_group = {'Jill': {
                 'job': 'Biologist',
-                'age': '26',
+                'age': 26,
                 'connections': {
                     'Zalika': 'friend',
                     'John': 'partner'}},
             'Zalika': {
                 'job': 'Artist',
-                'age': '28',
+                'age': 28,
                 'connections': {
                     'Jill': 'friend',
                     'Nash': 'landlord'}},
             'John': {
                 'job': 'Writer',
-                'age': '27',
+                'age': 27,
                 'connections': {
                     'Jill': 'partner',
                     'Nash': 'cousin'}},
             'Nash': {
                 'job': 'chef',
-                'age': '34',
+                'age': 34,
                 'connections': {
                     'John': 'cousin',
                     'Zalika': 'landlord'}}}
