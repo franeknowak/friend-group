@@ -1,3 +1,4 @@
+import json
 """An example of how to represent a group of acquaintances in Python."""
 
 # Your code to go here...
@@ -77,3 +78,8 @@ def at_least_one_friend(dic):
                 at_least_one_friend_list.append(dic[person]['age'])
     return max(at_least_one_friend_list)
 
+#Reading and writing structured data files #12
+json_mygroup = json.dumps(my_group, indent=4)
+with open('mygroup.json','w') as outfile:
+    outfile.write(json_mygroup)
+    
